@@ -1,0 +1,8 @@
+curl "https://api.telegram.org/bot742743149:AAGX9LwfLcLDuHsvJLEpgoVp0KLyelXscQo/setWebhook?url=https://prustephan.itis.team"
+
+curl -X POST \
+     -H 'Content-Type: application/json' \
+     -d '{"chat_id": "263766325", "text": "This is a test from curl", "disable_notification": true}' \
+     https://api.telegram.org/bot742743149:AAGX9LwfLcLDuHsvJLEpgoVp0KLyelXscQo/sendMessage
+
+curl https://api.telegram.org/bot742743149:AAGX9LwfLcLDuHsvJLEpgoVp0KLyelXscQo/getUpdates | jq .message.chat.id     

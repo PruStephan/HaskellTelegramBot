@@ -1,6 +1,6 @@
 module Main where
 
-import Lib
+import BotLib
 
 main :: IO ()
 main = startApp
